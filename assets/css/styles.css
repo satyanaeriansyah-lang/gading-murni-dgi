@@ -622,4 +622,13 @@ body {
   background: linear-gradient(135deg, #0b2a6f, #1d4ed8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}.section-title h2 {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1.2;
+}.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
 }
