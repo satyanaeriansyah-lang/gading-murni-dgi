@@ -293,3 +293,29 @@
     <script src="assets/js/app.js"></script>
   </body>
 </html>
+.grid.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+}.section-title h2 {
+  white-space: nowrap;
+  font-size: 20px;
+}.section-title h2 {
+  white-space: normal;
+  word-break: keep-all;
+  line-height: 1.2;
+}.section-title h2 {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .section-title h2 {
+    white-space: normal;
+  }
+}
