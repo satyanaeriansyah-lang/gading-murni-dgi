@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Promo & Paket Usaha — GADING MURNI DGI</title>
+    <meta name="description" content="Promo & paket usaha: paket pemula, mesin+tinta+training, diskon pameran (GPPE)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      body { font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    </style>
+  </head>
+  <body data-page="promo">
+    <header class="header">
+      <div class="topbar">
+        <div class="container row between gap-12">
+          <span><b data-brand>GADING MURNI DGI</b> • Promo & Paket Usaha</span>
+          <span class="muted">Jam: <span data-hours>Senin–Sabtu 09.00–17.00</span></span>
+        </div>
+      </div>
+      <div class="container nav row between gap-16">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">
+            <span data-brand>GADING MURNI DGI</span>
+            <small data-tagline>Distributor Mesin Printing Premium</small>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Navigasi utama">
+          <a href="./">Home</a>
+          <a href="products.html">Produk</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="promo.html"><b>Promo & Paket</b></a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+
+        <div class="row gap-12">
+          <div class="search" role="search">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.7" opacity=".9"/>
+              <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".9"/>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Cari mesin, tinta, sparepart…" autocomplete="off" />
+            <div id="searchResults" class="search-results" aria-label="Hasil pencarian"></div>
+          </div>
+          <a class="btn primary" data-wa target="_blank" rel="noopener">Konsultasi WhatsApp</a>
+          <button id="hamburger" class="btn hamburger" aria-label="Buka menu" type="button">Menu</button>
+        </div>
+      </div>
+
+      <div id="mobileDrawer" class="container mobile-drawer" aria-label="Menu mobile">
+        <a href="./">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="promo.html">Promo & Paket</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-card hero-main">
+            <span class="badge">Closing Booster</span>
+            <h1 class="hero-title">Promo & Paket Usaha</h1>
+            <p class="hero-sub">
+              Pilihan paket yang <b>bagus buat closing</b>: paket pemula, mesin + tinta + training, hingga promo pameran
+              (GPPE). Semua bisa disesuaikan kebutuhan dan budget.
+            </p>
+            <div class="row wrap gap-12">
+              <a class="btn primary" data-wa target="_blank" rel="noopener">Konsultasi Paket (WA)</a>
+              <a class="btn" href="products.html">Lihat Katalog Mesin</a>
+            </div>
+            <div class="promo-strip">
+              <div>
+                <strong>Tips:</strong>
+                <span class="muted">Tawarkan “Paket Pemula” untuk pelanggan baru agar lebih cepat deal.</span>
+              </div>
+              <a class="btn small primary" data-wa target="_blank" rel="noopener">Minta Pricelist</a>
+            </div>
+          </div>
+          <div class="hero-card hero-visual">
+            <div class="visual-box">
+              <div class="visual-stat">
+                <div class="stat">
+                  <b>Mesin + Tinta</b>
+                  <span>Paket siap produksi</span>
+                </div>
+                <div class="stat">
+                  <b>Training</b>
+                  <span>Operator cepat bisa jalan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Paket yang tersedia</h2>
+              <p>Contoh paket (silakan edit sesuai promo Anda).</p>
+            </div>
+          </div>
+          <div id="promoGrid" class="grid two"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container row between wrap gap-16">
+        <div>
+          <div class="brand" style="gap:10px">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">
+              <span data-brand>GADING MURNI DGI</span>
+              <small data-tagline>Distributor Mesin Printing Premium</small>
+            </span>
+          </div>
+          <small>© <span id="y"></span> <span data-brand>GADING MURNI DGI</span>.</small>
+        </div>
+        <div class="row gap-12 wrap">
+          <a class="btn small" href="portfolio.html">Portfolio</a>
+          <a class="btn small primary" data-wa target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+

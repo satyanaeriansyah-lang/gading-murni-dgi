@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak — GADING MURNI DGI</title>
+    <meta name="description" content="Kontak GADING MURNI DGI: WhatsApp, Maps showroom, Instagram, jam operasional." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      body { font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    </style>
+  </head>
+  <body data-page="contact">
+    <header class="header">
+      <div class="topbar">
+        <div class="container row between gap-12">
+          <span><b data-brand>GADING MURNI DGI</b> • Kontak</span>
+          <span class="muted">Jam: <span data-hours>Senin–Sabtu 09.00–17.00</span></span>
+        </div>
+      </div>
+      <div class="container nav row between gap-16">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">
+            <span data-brand>GADING MURNI DGI</span>
+            <small data-tagline>Distributor Mesin Printing Premium</small>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Navigasi utama">
+          <a href="./">Home</a>
+          <a href="products.html">Produk</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="promo.html">Promo & Paket</a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html"><b>Kontak</b></a>
+        </nav>
+
+        <div class="row gap-12">
+          <div class="search" role="search">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.7" opacity=".9"/>
+              <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".9"/>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Cari mesin, tinta, sparepart…" autocomplete="off" />
+            <div id="searchResults" class="search-results" aria-label="Hasil pencarian"></div>
+          </div>
+          <a class="btn primary" data-wa target="_blank" rel="noopener">Konsultasi WhatsApp</a>
+          <button id="hamburger" class="btn hamburger" aria-label="Buka menu" type="button">Menu</button>
+        </div>
+      </div>
+
+      <div id="mobileDrawer" class="container mobile-drawer" aria-label="Menu mobile">
+        <a href="./">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="promo.html">Promo & Paket</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Kontak</h2>
+            <p>Hubungi kami via WhatsApp atau kunjungi showroom.</p>
+          </div>
+        </div>
+
+        <div class="grid two">
+          <div class="card pad">
+            <span class="badge">WhatsApp</span>
+            <h3 style="margin:10px 0 6px; letter-spacing:-.02em;">Chat untuk harga & spek</h3>
+            <p class="muted" style="margin:0; line-height:1.7">
+              Klik tombol di bawah untuk konsultasi mesin, tinta, sparepart, atau paket usaha.
+            </p>
+            <div style="margin-top:14px" class="row gap-12 wrap">
+              <a class="btn primary" data-wa target="_blank" rel="noopener">Chat WhatsApp</a>
+              <a class="btn" href="products.html">Buka Katalog</a>
+            </div>
+          </div>
+
+          <div class="card pad">
+            <span class="badge">Instagram</span>
+            <h3 style="margin:10px 0 6px; letter-spacing:-.02em;">Update produk & hasil cetak</h3>
+            <p class="muted" style="margin:0; line-height:1.7">
+              Taruh link Instagram resmi Anda di file <b>assets/js/data.js</b>.
+            </p>
+            <div style="margin-top:14px">
+              <a class="btn primary" data-instagram target="_blank" rel="noopener">Buka Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:16px"></div>
+        <div class="card pad">
+          <div class="section-title" style="margin-bottom:10px">
+            <div>
+              <h2>Maps Showroom</h2>
+              <p>Ganti lokasi maps embed di <b>assets/js/data.js</b>.</p>
+            </div>
+            <span class="pill">Jam: <span data-hours>Senin–Sabtu 09.00–17.00</span></span>
+          </div>
+          <div class="embed" style="aspect-ratio: 16/7">
+            <iframe id="mapsEmbed" title="Maps showroom" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container row between wrap gap-16">
+        <div>
+          <div class="brand" style="gap:10px">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">
+              <span data-brand>GADING MURNI DGI</span>
+              <small data-tagline>Distributor Mesin Printing Premium</small>
+            </span>
+          </div>
+          <small>© <span id="y"></span> <span data-brand>GADING MURNI DGI</span>.</small>
+        </div>
+        <div class="row gap-12 wrap">
+          <a class="btn small" href="about.html">Tentang</a>
+          <a class="btn small primary" data-wa target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+

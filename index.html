@@ -1,0 +1,296 @@
+<!doctype html><form>
+  <input type="email" placeholder="satyanaeriansyah@gmail.com" required />
+  <button type="submit">Kirim</button>
+</form>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GADING MURNI DGI — Distributor Mesin Printing Premium</title>
+    <meta
+      name="description"
+      content="Showroom & katalog mesin digital printing (mesin saja) — UV, Eco Solvent, DTF, Sublim, Cutting, Flatbed + sparepart, tinta, dan media."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+          Segoe UI, Roboto, Helvetica, Arial;
+      }
+    </style>
+  </head>
+  <body data-page="home">
+    <header class="header">
+      <div class="topbar">
+        <div class="container row between gap-12">
+          <span><b data-brand>GADING MURNI DGI</b> • Showroom Mesin Digital Printing</span>
+          <span class="muted">Jam: <span data-hours>Senin–Sabtu 09.00–17.00</span></span>
+        </div>
+      </div>
+      <div class="container nav row between gap-16">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">
+            <span data-brand>GADING MURNI DGI</span>
+            <small data-tagline>Distributor Mesin Printing Premium</small>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Navigasi utama">
+          <a href="./">Home</a>
+          <a href="products.html">Produk</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="promo.html">Promo & Paket</a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+
+        <div class="row gap-12">
+          <div class="search" role="search">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.7" opacity=".9"/>
+              <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".9"/>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Cari mesin, tinta, sparepart…" autocomplete="off" />
+            <div id="searchResults" class="search-results" aria-label="Hasil pencarian"></div>
+          </div>
+
+          <a class="btn primary" data-wa target="_blank" rel="noopener">Konsultasi WhatsApp</a>
+          <button id="hamburger" class="btn hamburger" aria-label="Buka menu" type="button">Menu</button>
+        </div>
+      </div>
+
+      <div id="mobileDrawer" class="container mobile-drawer" aria-label="Menu mobile">
+        <a href="./">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="promo.html">Promo & Paket</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO / PROMO BANNER -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-card hero-main">
+            <span class="badge">Modern • Clean • Fokus Produk</span>
+            <h1 class="hero-title">Mesin Digital Printing untuk bisnis yang serius.</h1>
+            <p class="hero-sub">
+              <b data-brand>GADING MURNI DGI</b> menyediakan showroom, konsultasi kebutuhan usaha, dan rekomendasi mesin
+              (UV, Eco Solvent, DTF, Sublim, Cutting, Flatbed) — tampilan katalog rapi ala Shopify.
+            </p>
+            <div class="row wrap gap-12">
+              <a class="btn primary" href="products.html">Lihat Katalog Produk</a>
+              <a class="btn" data-wa target="_blank" rel="noopener">Tanya Harga & Spek (WA)</a>
+            </div>
+            <div class="promo-strip">
+              <div>
+                <strong>Promo bulan ini:</strong>
+                <span class="muted">Paket usaha pemula + training • Diskon pameran (GPPE)</span>
+              </div>
+              <a class="btn small primary" href="promo.html">Lihat Promo</a>
+            </div>
+          </div>
+
+          <div class="hero-card hero-visual">
+            <div class="visual-box">
+              <div class="visual-stat">
+                <div class="stat">
+                  <b>Showroom Ready</b>
+                  <span>Demo mesin & hasil cetak</span>
+                </div>
+                <div class="stat">
+                  <b>After-Sales</b>
+                  <span>Support + sparepart</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUK UNGGULAN -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Produk Unggulan</h2>
+              <p>Kurasi produk yang paling sering dicari customer.</p>
+            </div>
+            <a class="btn small" href="products.html">Lihat Semua</a>
+          </div>
+          <div id="featuredGrid" class="grid products"></div>
+        </div>
+      </section>
+
+      <!-- BESTSELLER -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Bestseller</h2>
+              <p>Favorit untuk produksi harian.</p>
+            </div>
+            <a class="btn small" href="products.html?cat=Mesin%20Printing">Kategori Mesin</a>
+          </div>
+          <div id="bestsellerGrid" class="grid products"></div>
+        </div>
+      </section>
+
+      <!-- PRODUK TERBARU -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Produk Terbaru</h2>
+              <p>Update terbaru dari katalog kami.</p>
+            </div>
+            <a class="btn small" href="products.html">Cari Produk</a>
+          </div>
+          <div id="newestGrid" class="grid products"></div>
+        </div>
+      </section>
+
+      <!-- VIDEO MESIN + TESTIMONI -->
+      <section class="section">
+        <div class="container">
+          <div class="grid two">
+            <div class="card pad">
+              <div class="section-title">
+                <div>
+                  <h2>Video Mesin</h2>
+                  <p>Demo “mesin jalan” untuk bukti performa.</p>
+                </div>
+              </div>
+              <div class="embed">
+                <iframe
+                  src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                  title="Video demo mesin (placeholder)"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="muted" style="margin: 10px 0 0; line-height: 1.6; font-size: 13px">
+                Anda bisa ganti link video sesuai mesin yang tersedia di showroom.
+              </p>
+            </div>
+            <div>
+              <div class="section-title">
+                <div>
+                  <h2>Testimoni</h2>
+                  <p>Biar lebih percaya sebelum closing.</p>
+                </div>
+              </div>
+              <div id="testiGrid" class="grid" style="grid-template-columns:1fr; gap:12px;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO PREVIEW -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Portfolio / Hasil Produksi</h2>
+              <p>Hasil cetak, video mesin jalan, hasil customer, before-after.</p>
+            </div>
+            <a class="btn small primary" href="portfolio.html">Lihat Portfolio</a>
+          </div>
+          <div class="card pad">
+            <div class="row between wrap gap-12">
+              <div>
+                <b>Ini penting banget.</b>
+                <p class="muted" style="margin:6px 0 0; line-height:1.65">
+                  Buat customer makin yakin dengan bukti real produksi.
+                </p>
+              </div>
+              <a class="btn" href="portfolio.html">Buka Galeri</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMO & PAKET -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Promo & Paket Usaha</h2>
+              <p>Bagus buat closing (pemula sampai upgrade).</p>
+            </div>
+            <a class="btn small primary" href="promo.html">Lihat Paket</a>
+          </div>
+          <div class="grid two">
+            <div class="card pad">
+              <span class="badge">Paket Pemula</span>
+              <h3 style="margin:10px 0 6px; letter-spacing:-.02em;">Mulai usaha printing lebih aman</h3>
+              <p class="muted" style="margin:0; line-height:1.7">
+                Mesin + tinta + training + support, disesuaikan kebutuhan & budget.
+              </p>
+              <div style="margin-top:14px">
+                <a class="btn primary" href="promo.html">Lihat Detail Paket</a>
+              </div>
+            </div>
+            <div class="card pad">
+              <span class="badge">Diskon Pameran</span>
+              <h3 style="margin:10px 0 6px; letter-spacing:-.02em;">Promo khusus event (GPPE)</h3>
+              <p class="muted" style="margin:0; line-height:1.7">
+                Booking unit, bonus item tertentu, dan harga spesial selama periode promo.
+              </p>
+              <div style="margin-top:14px">
+                <a class="btn primary" data-wa target="_blank" rel="noopener">Tanya Promo via WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container row between wrap gap-16">
+        <div>
+          <div class="brand" style="gap:10px">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">
+              <span data-brand>GADING MURNI DGI</span>
+              <small data-tagline>Distributor Mesin Printing Premium</small>
+            </span>
+          </div>
+          <small>© <span id="y"></span> <span data-brand>GADING MURNI DGI</span>. All rights reserved.</small>
+        </div>
+        <div class="row gap-12 wrap">
+          <a class="btn small" href="products.html">Katalog</a>
+          <a class="btn small" href="portfolio.html">Portfolio</a>
+          <a class="btn small primary" data-wa target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal detail produk -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-label="Detail Produk">
+        <div class="modal-head">
+          <b id="modalTitle"></b>
+          <button id="modalClose" class="btn small" type="button">Tutup</button>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+

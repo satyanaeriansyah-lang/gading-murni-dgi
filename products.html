@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Katalog Produk — GADING MURNI DGI</title>
+    <meta name="description" content="Katalog mesin printing, sparepart, tinta, dan media printing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      body { font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    </style>
+  </head>
+  <body data-page="products">
+    <header class="header">
+      <div class="topbar">
+        <div class="container row between gap-12">
+          <span><b data-brand>GADING MURNI DGI</b> • Katalog Produk</span>
+          <span class="muted">Jam: <span data-hours>Senin–Sabtu 09.00–17.00</span></span>
+        </div>
+      </div>
+      <div class="container nav row between gap-16">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">
+            <span data-brand>GADING MURNI DGI</span>
+            <small data-tagline>Distributor Mesin Printing Premium</small>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Navigasi utama">
+          <a href="./">Home</a>
+          <a href="products.html"><b>Produk</b></a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="promo.html">Promo & Paket</a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+
+        <div class="row gap-12">
+          <div class="search" role="search">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.7" opacity=".9"/>
+              <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".9"/>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Cari mesin, tinta, sparepart…" autocomplete="off" />
+            <div id="searchResults" class="search-results" aria-label="Hasil pencarian"></div>
+          </div>
+          <a class="btn primary" data-wa target="_blank" rel="noopener">Konsultasi WhatsApp</a>
+          <button id="hamburger" class="btn hamburger" aria-label="Buka menu" type="button">Menu</button>
+        </div>
+      </div>
+
+      <div id="mobileDrawer" class="container mobile-drawer" aria-label="Menu mobile">
+        <a href="./">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="promo.html">Promo & Paket</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Katalog Produk</h2>
+            <p id="productsMeta">Cari & filter kategori seperti Shopify: simple, elegan, fokus ke produk.</p>
+          </div>
+          <div class="row gap-12 wrap">
+            <a class="btn small" href="products.html?cat=Mesin%20Printing">Mesin</a>
+            <a class="btn small" href="products.html?cat=Sparepart%20%26%20Head%20Printer">Sparepart</a>
+            <a class="btn small" href="products.html?cat=Tinta%20Printing">Tinta</a>
+            <a class="btn small" href="products.html?cat=Media%20Printing">Media</a>
+          </div>
+        </div>
+
+        <div class="layout">
+          <aside class="sidebar">
+            <div id="filters"></div>
+            <div style="height:12px"></div>
+            <div class="card pad">
+              <span class="badge">Catatan</span>
+              <p class="muted" style="margin:10px 0 0; line-height:1.7; font-size:13px">
+                Klik kartu produk untuk melihat detail. Untuk order/penawaran, tombol <b>Tanya via WA</b> akan mengarah
+                langsung ke WhatsApp.
+              </p>
+            </div>
+          </aside>
+
+          <section>
+            <div id="productsGrid" class="grid products"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container row between wrap gap-16">
+        <div>
+          <div class="brand" style="gap:10px">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">
+              <span data-brand>GADING MURNI DGI</span>
+              <small data-tagline>Distributor Mesin Printing Premium</small>
+            </span>
+          </div>
+          <small>© <span id="y"></span> <span data-brand>GADING MURNI DGI</span>.</small>
+        </div>
+        <div class="row gap-12 wrap">
+          <a class="btn small" href="promo.html">Promo</a>
+          <a class="btn small" href="portfolio.html">Portfolio</a>
+          <a class="btn small primary" data-wa target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal detail produk -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-label="Detail Produk">
+        <div class="modal-head">
+          <b id="modalTitle"></b>
+          <button id="modalClose" class="btn small" type="button">Tutup</button>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+
