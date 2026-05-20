@@ -307,12 +307,16 @@ img{ max-width: 100%; display:block; }
 .section{
   padding: 26px 0;
 }
-.section-title{
-  display:flex;
-  align-items:flex-end;
+.section-title {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 14px;
+  gap: 16px;
+  flex-wrap: wrap;
+}.section-title h2 {
+  margin: 0;
+  white-space: normal;
+}
 }
 .section-title h2{
   margin: 0;
